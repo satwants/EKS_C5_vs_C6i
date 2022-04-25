@@ -12,9 +12,9 @@ Intent is so we can setup this as a lab quicky for a presentation to show perfro
 This repo is not intending to Replace the core documentation and material, its a mere intent to have it setup quikly for local setup and demo</i>
 <br />
 
-<b>NOTE: We are setting up a demo enviornment for our usecase, it is not a example of setting up a Production EKS cluster </b>
+<b>NOTE: We are setting up a demo environment for our usecase, it is not a example of setting up a Production EKS cluster </b>
 
-Prerequistes : <br />
+Prerequistes tool installs : <br />
 aws cli : https://docs.aws.amazon.com/polly/latest/dg/setup-aws-cli.html  <br />
 eksctl : https://docs.aws.amazon.com/eks/latest/userguide/eksctl.html <br />
 kubectl : https://kubernetes.io/docs/tasks/tools/ <br />
