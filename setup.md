@@ -24,3 +24,5 @@ Step 2: verify eksctl is installed "eksctl version" <br /> you should see a vers
 
 Step 3: verify kubectl is installed "kubectl version" <br />
 
+Step 4: now we are ready to create  our eks cluster as we have all the peices needed. Using the eksctl create command we will create the cluster using config file referred in this git repo 
+
