@@ -1,6 +1,6 @@
 # EKS_C5_vs_C6i
 
-Our source and reference is the following document created by Intels Team  <br />
+Our source for reference is the following document and material created by Intels Team.. special thanks to Petar Torre   <br />
 https://builders.intel.com/docs/networkbuilders/high-performance-computation-modernization-in-financial-services-industries-technology-guide-1617432497.pdf <br />
 
 Financial Services Workload Samples: <br /> 
