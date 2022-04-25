@@ -29,7 +29,9 @@ Step 4: now we are ready to create  our eks cluster as we have all the peices ne
 
 output similar to this in command line
 <img src="/images/1_eksctl_create.JPG" alt="eksctl create cluster" title="eksctl create cluster"> <br />
+<br />
 
+Be patient this is going to take some time .. close to 15ishh min
 
 
 
