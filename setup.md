@@ -83,11 +83,31 @@ http://localhost:3000/
 
 <h16>Demo Up and Running!!!</h16>
 
+<br />
 
-
-
-
-
-
-
-
+<b> NOTE please delete your workloads and node if you are not using it for demo or learning as its going to cost $$$ <b>
+    
+ Step 8 : <br />
+DELETE Options  1 : Quick and Dirty delete the EKS CLUSTER using EKSCTL <br />
+    
+    eksctl delete cluster --name <prod> --region <regioncode> <br />
+    
+  DELETE Options  2 :  <br />
+  Delete workloads :    <br />
+<b>kubectl delete -f monte-carlo-c5-avx2.yaml</b> <br />
+<b>kubectl delete -f monte-carlo-c5-avx512.yaml </b><br />
+<b>kubectl delete -f monte-carlo-c6i-avx2.yaml</b> <br />
+<b>kubectl delete -f monte-carlo-c6i-avx512.yaml</b> <br />
+  <br />
+    
+    Delete Reporting setup : <br />
+ <b>   kubectl delete -f reporting.yaml</b>
+    <br />
+    
+    Delete NFD : <br />
+    
+   <b>  kubectl delete -k https://github.com/kubernetes-sigs/node-feature-discovery/deployment/overlays/default?ref=v0.11.0  </b>
+    <br />
+    
+    Delete EKS CLuster: <br />
+    eksctl delete cluster --name <clustername> --region <regioncode> <br />
