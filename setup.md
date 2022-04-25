@@ -31,7 +31,19 @@ output similar to this in command line
 <img src="/images/1_eksctl_create.JPG" alt="eksctl create cluster" title="eksctl create cluster"> <br />
 <br />
 
-Be patient this is going to take some time .. close to 15ishh min
+Be patient this is going to take some time .. close to <b>15ishh min</b> <br />
+once completed it should show screen similar to following <br />
+<img src="/images/2-eksctl_create_done.JPG" alt="eksctl create cluster done " title="eksctl create cluster done"> <br />
+
+Run command <br />
+kubectl get nodes <br />
+
+ you should see 2 nodes :) 
+
+Step 4: we need to install Node Feature Discovery (NFD) (https://github.com/kubernetes-sigs/node-feature-discovery) <br />
+use the command : <br />
+kubectl apply -k https://github.com/kubernetes-sigs/node-feature-discovery/deployment/overlays/default?ref=v0.11.0 <br />
+<img src="/images/3_nfd_install.JPG" alt="kubectl NFD install" title="kubectl NFD install"> <br />
 
 
 
