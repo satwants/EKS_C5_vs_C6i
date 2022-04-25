@@ -17,6 +17,8 @@ This repo is not intending to Replace the core documentation and material, its a
 Prerequistes : <br />
 aws cli : https://docs.aws.amazon.com/polly/latest/dg/setup-aws-cli.html  <br />
 eksctl : https://docs.aws.amazon.com/eks/latest/userguide/eksctl.html <br />
+kubectl : https://kubernetes.io/docs/tasks/tools/ <br />
+
 
   <br />
   <br />
