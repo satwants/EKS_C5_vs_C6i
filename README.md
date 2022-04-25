@@ -6,8 +6,14 @@ https://builders.intel.com/docs/networkbuilders/high-performance-computation-mod
 
 <i>We are not exaclty using the same setup, we have taken a subset of the above instead of doing automated orchestration using Cloudify, we are applying the workload directly to EKS cluster and creating the cluster using eksctl instead of Terraform and Ansible etc. >/i>
 
-Prerequistes : 
+Prerequistes : <br />
 aws cli : https://docs.aws.amazon.com/polly/latest/dg/setup-aws-cli.html  <br />
 eksctl : https://docs.aws.amazon.com/eks/latest/userguide/eksctl.html <br />
 
-For our purpose we are using eksctl with config file setup
+  
+  <br />
+  <br />
+  
+  High level reference architecture and setup <br />
+  
+
