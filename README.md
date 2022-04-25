@@ -1,5 +1,4 @@
 # EKS_C5_vs_C6i
-Yaml configuration files to setup a EKS cluster to demonstrate performance gains of C5 vc C6i and also AVX2 vs AVX512.<br />
 
 Our source and reference is the following document created by Intels Team  <br />
 https://builders.intel.com/docs/networkbuilders/high-performance-computation-modernization-in-financial-services-industries-technology-guide-1617432497.pdf
@@ -13,10 +12,17 @@ Prerequistes : <br />
 aws cli : https://docs.aws.amazon.com/polly/latest/dg/setup-aws-cli.html  <br />
 eksctl : https://docs.aws.amazon.com/eks/latest/userguide/eksctl.html <br />
 
-  
+Yaml configuration files to setup a EKS cluster to demonstrate performance gains of C5 vc C6i and also AVX2 vs AVX512.<br />
+
   <br />
   <br />
   
   High level reference architecture and setup <br />
-  
-[[/subset_C5_C6i_avx2_avx215_setup.jpg|Montel Carlo ]]
+
+<img src="/images/subset_C5_C6i_avx2_avx215_setup.jpg" alt="High level reference" title="High level reference"> <br />
+
+Pod setup and metrics flow <br />
+<img src="/images/pod_setup_metrics_collection.jpg" alt="Pod setup and metrics flow" title="Pod setup and metrics flow"> <br />
+
+Demo summary dashboard  <br />
+<img src="/images/demo_summry_dashboard.jpg" alt="Pod setup and metrics flow" title="Pod setup and metrics flow"> <br />
