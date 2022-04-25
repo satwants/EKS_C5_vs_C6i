@@ -1,4 +1,4 @@
-# EKS_C5_vs_C6i
+# Monte Carlo simulation C5 vs C6i (EKS) performance 
 
 Monte Carlo simulation is commonly used to evaluate the risk and uncertainty that would affect the outcome of different decision
 options. Monte Carlo methods are used in corporate finance and mathematical finance to value and analyze (complex) instruments,
@@ -44,6 +44,8 @@ kubectl : https://kubernetes.io/docs/tasks/tools/ <br />
 
 
   <br />
+  
+[Getting Started Guide](https://github.com/satwants/EKS_C5_vs_C6i/blob/main/setup.md)
   <br />
   
  <b>High level reference architecture and setup </b><br />
