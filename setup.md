@@ -64,6 +64,29 @@ Step 6 : create the workload pods by applying pod specific yamls <br /><br />
 <img src="/images/5_workloadpods.JPG" alt="kubectl pod workload" title="kubectl pod workload"> <br />
 <br />
 
+<br />
+
+Step 7: At this point we have EKS cluster with 2 nodes, NFD , reporting setup done and workloads applied. Now we need to port forward the Grafana dashboard so we can see the visual of time elapased to do the mote carlo calculation on all our 4 pods. <br /><br />
+
+<b>kubectl port-forward -n demo-reporting service/demo-reporting --address 0.0.0.0 3000:3000 9090:9090 9091:9091 </b> <br />
+
+Now we can go to localhost port 3000 and default username is "admin" and password is in the reporting yaml default of "password" <br />
+http://localhost:3000/ 
+<br />
+<img src="/images/6_grafana_login.JPG" alt="grafana login" title="grafana login"> <br />
+<br />
+<img src="/images/7_grafana_dashboard.JPG" alt="grafana select dashboard" title="grafana select dashboard"> <br />
+<br />
+<img src="/images/8_final_dashboard.JPG" alt="grafana final dashboard" title="grafana final dashboard"> <br />
+
+<br />
+
+<h16>Demo Up and Running!!!</h16>
+
+
+
+
+
 
 
 
