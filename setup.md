@@ -1,7 +1,7 @@
 Step 1: <br /> <br />
 
 Verify awscli is installed, connected and working, run the command to verify "aws iam get-user"  output should look something like <br />
-{<br />
+{
     "User": {<br />
         "Path": "/",<br />
         "UserName": "username",<br />
@@ -11,12 +11,11 @@ Verify awscli is installed, connected and working, run the command to verify "aw
         "Tags": [<br />
             {<br />
                 "Key": "usertype",<br />
-                "Value": "cli"<br />
-            }<br />
-                  ]<br />
-             }<br />
-        }<br />
-
+                "Value": "cli"
+            }
+                  ]
+             }
+        }
 <br />
 
 Step 2: verify eksctl is installed "eksctl version" <br /> you should see a version number
@@ -41,11 +40,19 @@ kubectl get nodes <br />
  you should see 2 nodes :) 
 
 Step 4: we need to install Node Feature Discovery (NFD) (https://github.com/kubernetes-sigs/node-feature-discovery) <br />
-use the command : <br />
+use the command : <br /><br />
 kubectl apply -k https://github.com/kubernetes-sigs/node-feature-discovery/deployment/overlays/default?ref=v0.11.0 <br />
+<br />
 <img src="/images/3_nfd_install.JPG" alt="kubectl NFD install" title="kubectl NFD install"> <br />
+<br />
 
+Step 5 : now we will install the reporting namespaces which will setup prometheus, push gateway and grafan <br />
 
+kubectl apply -f reporting.yaml  ( this will create pods and services needed)  <br />
+kubectl -n demo-reporting get all  ( validate all are working fine)  <br />
+<br />
+<img src="/images/4_reporting_isntall.JPG" alt="kubectl reporting install" title="kubectl reporting install"> <br />
+<br />
 
 
 
