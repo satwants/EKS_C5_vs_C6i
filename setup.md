@@ -1,5 +1,4 @@
-<b>Step 1: </b><br /> <br />
-
+<b>Step 1: </b><br/>
 Verify awscli is installed, connected and working, run the command to verify "aws iam get-user"  output should look something like <br />
 {
     "User": {<br />
@@ -17,12 +16,8 @@ Verify awscli is installed, connected and working, run the command to verify "aw
              }
         }
 <br />
-
-<b>Step 2 </b>: verify eksctl is installed "eksctl version" <br /> you should see a version number
-<br />
-
+<b>Step 2 </b>: verify eksctl is installed "eksctl version",  you should see a version number <br />
 <b>Step 3</b>: verify kubectl is installed "kubectl version" <br />
-
 <b>Step 4</b>: now we are ready to create  our eks cluster as we have all the peices needed. Using the eksctl create command we will create the cluster using config file referred in this git repo  "EKS_demo.yml <br />
 eksctl create cluster -f EKS_demo.yml <br />
 
@@ -36,9 +31,8 @@ once completed it should show screen similar to following <br />
 
 Run command <br />
 <b>kubectl get nodes </b><br />
-
  you should see 2 nodes :) 
-
+ 
 <b>Step 4</b>: we need to install Node Feature Discovery (NFD) (https://github.com/kubernetes-sigs/node-feature-discovery) <br />
 use the command : <br /><br />
 <b>kubectl apply -k https://github.com/kubernetes-sigs/node-feature-discovery/deployment/overlays/default?ref=v0.11.0 </b> <br />
