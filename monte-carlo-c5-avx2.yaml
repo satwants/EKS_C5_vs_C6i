@@ -1,0 +1,40 @@
+
+# Copyright (C) 2022 Intel Corporation
+# SPDX-License-Identifier: Apache-2.0
+#
+apiVersion: v1
+kind: Pod
+metadata:
+  name: monte-carlo-c5-avx2
+  labels:
+    name: monte-carlo-c5-avx2
+spec:
+  restartPolicy: Never
+  nodeSelector:
+    node.kubernetes.io/instance-type: "c5.2xlarge"
+  containers:
+  - name: montecarlo
+    image: ptorre/montecarlo
+    imagePullPolicy: Always
+    command: ["/app/start"]
+    #command: ["sleep", "infinity"]
+    env:
+    - name: METRIC_NAME
+      value: "c5_avx2"
+    - name: USE_TASKSET
+      value: "0"
+    - name: PAUSE_TIME # seconds
+      value: "10"
+    - name: PR # processes
+      value: "2"
+    - name: USE_AVX512
+      value: "0"
+    - name: PUSHGWIP
+      value: "demo-reporting.demo-reporting.svc.cluster.local"
+    resources:
+      requests:
+        memory: "500Mi"
+        cpu: "2"
+      limits:
+        memory: "500Mi"
+        cpu: "2"
