@@ -19,7 +19,8 @@ Verify awscli is installed, connected and working, run the command to verify "aw
 <b>Step 2 </b>: verify eksctl is installed "eksctl version",  you should see a version number <br />
 <b>Step 3</b>: verify kubectl is installed "kubectl version" <br />
 <b>Step 4</b>: now we are ready to create  our eks cluster as we have all the peices needed. Using the eksctl create command we will create the cluster using config file referred in this git repo  "EKS_demo.yml <br />
-eksctl create cluster -f EKS_demo.yml <br />
+<br />
+<b>eksctl create cluster -f EKS_demo.yml </b> <br />
 
 output similar to this in command line
 <img src="/images/1_eksctl_create.JPG" alt="eksctl create cluster" title="eksctl create cluster"> <br />
