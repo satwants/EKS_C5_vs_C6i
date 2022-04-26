@@ -45,7 +45,7 @@ kubectl : https://kubernetes.io/docs/tasks/tools/ <br />
 
   <br />
   
-[Getting Started Guide](https://github.com/satwants/EKS_C5_vs_C6i/blob/main/setup.md)
+--> [Getting Started Guide](https://github.com/satwants/EKS_C5_vs_C6i/blob/main/setup.md)
   <br />
   
  <b>High level reference architecture and setup </b><br />
